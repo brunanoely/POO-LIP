@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Depurar Programa C++",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/L04Ex02", // Caminho do executável gerado
+        "args": [], // Argumentos de linha de comando, se necessário
+        "stopAtEntry": true, // Pausar no início da execução do programa
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": true, // Usar terminal externo
+        "MIMode": "gdb",
+        "setupCommands": [
+          {
+            "description": "Habilitar impressão de valores para GDB",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+        "preLaunchTask": "compilar" // Compilar antes de iniciar o programa
+      }
+    ]
+  }
+  
